@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido</title>
+</head>
+<body>
+  <h1>Universidad de El Salvador</h1>
+  <p>Bienvenido, tu código es: <span id="codigo"></span></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("codigo").textContent = params.get("codigo");
+  </script>
+</body>
+</html>
